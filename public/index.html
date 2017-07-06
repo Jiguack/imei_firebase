@@ -63,11 +63,6 @@
 		
 		//UPDATE TO SERVER
 		$.get("/imei", {imei:imei, time: time});
-		
-		//GET ACTIVATIONABLE 
-		$.get("https://www.verizonwireless.com/postpayservices/model/com/vzw/rest/nso/nsoActor/checkDeviceId?deviceId=353292071956953", {esn:imei}).done(function(data) {
-			alert(data);
-		});
     }
 	
 	function removeUI(imei) {
